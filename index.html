@@ -72,7 +72,7 @@
 
         <div class="hero-ctas">
           <a href="#register" class="btn btn-primary btn-lg" data-i18n="hero.cta1">Register for Event</a>
-          <a href="#testdrive" class="btn btn-ghost btn-lg" data-i18n="hero.cta2">Book Test Drive</a>
+          <a href="#testdrive" class="btn btn-ghost btn-lg" data-i18n="hero.cta2">Request Fleet Trial</a>
         </div>
 
         <div class="hero-scroll">
@@ -83,15 +83,16 @@
     </section>
 
     <!-- ============ VIDEO ============ -->
-    <section class="section-video" aria-label="Event video">
-      <div class="video-wrap">
-        <iframe
-          src="https://www.youtube-nocookie.com/embed/BqCX95kNU5I?autoplay=1&mute=1&loop=1&playlist=BqCX95kNU5I&controls=0&modestbranding=1&showinfo=0&rel=0&iv_load_policy=3&playsinline=1&disablekb=1"
-          title="Tegeta × FAW"
-          frameborder="0"
-          allow="autoplay; encrypted-media; picture-in-picture"
-          allowfullscreen></iframe>
-        <div class="video-shield" aria-hidden="true"></div>
+    <section class="section section-video" aria-label="Event video">
+      <div class="container">
+        <div class="video-wrap reveal">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/BqCX95kNU5I?autoplay=1&mute=1&loop=1&playlist=BqCX95kNU5I&modestbranding=1&rel=0&playsinline=1"
+            title="Tegeta × FAW"
+            frameborder="0"
+            allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+            allowfullscreen></iframe>
+        </div>
       </div>
     </section>
 
@@ -110,7 +111,7 @@
         </div>
         <div class="stat-grid reveal">
           <div class="stat-card"><span class="stat-num">3</span><span class="stat-label" data-i18n="about.s1">New Models</span></div>
-          <div class="stat-card"><span class="stat-num">2</span><span class="stat-label" data-i18n="about.s2">Days of Test Drives</span></div>
+          <div class="stat-card"><span class="stat-num">2</span><span class="stat-label" data-i18n="about.s2">Day Fleet Trial</span></div>
           <div class="stat-card"><span class="stat-num">28</span><span class="stat-label" data-i18n="about.s3">Service Branches</span></div>
           <div class="stat-card"><span class="stat-num">30+</span><span class="stat-label" data-i18n="about.s4">Years of Expertise</span></div>
         </div>
@@ -271,23 +272,27 @@
     <section class="section section-testdrive" id="testdrive">
       <div class="container grid-2 align-center">
         <div class="reveal">
-          <span class="section-eyebrow" data-i18n="td.eyebrow">2-DAY TEST DRIVE</span>
-          <h2 class="section-title" data-i18n="td.title">Take the wheel.</h2>
+          <span class="section-eyebrow" data-i18n="td.eyebrow">2-DAY FLEET TRIAL</span>
+          <h2 class="section-title" data-i18n="td.title">Test it where you work.</h2>
           <p class="lead" data-i18n="td.lead">
-            Experience all three FAW models on a professionally-guided 2-day test drive program. Choose your preferred truck, pick a day, and drive one of the most anticipated new fleets in Georgia.
+            A short test drive is available on event day. For a real evaluation, reserve the 2-day fleet trial — Tegeta loans your company the FAW model of your choice for two full working days so you can test it on your own routes, at your own sites, with your own team.
           </p>
           <ul class="td-points">
-            <li data-i18n="td.p1">Professional instructor in every cab</li>
-            <li data-i18n="td.p2">Route designed to showcase real-world performance</li>
-            <li data-i18n="td.p3">Limited slots — reserve early</li>
+            <li data-i18n="td.p1">Your choice of FAW model</li>
+            <li data-i18n="td.p2">Two full working days in your own operations</li>
+            <li data-i18n="td.p3">Technical support available on call</li>
           </ul>
         </div>
 
         <form class="td-form reveal" id="testDriveForm" novalidate>
-          <h3 data-i18n="td.form.title">Reserve your slot</h3>
+          <h3 data-i18n="td.form.title">Reserve your trial</h3>
           <div class="field">
             <label for="td-name" data-i18n="td.form.name">Full name</label>
             <input type="text" id="td-name" name="name" required />
+          </div>
+          <div class="field">
+            <label for="td-company" data-i18n="td.form.company">Company</label>
+            <input type="text" id="td-company" name="company" required />
           </div>
           <div class="field">
             <label for="td-phone" data-i18n="td.form.phone">Phone</label>
@@ -302,16 +307,7 @@
               <option value="tiger-vr">FAW Tiger VR 4×2 · Cargo</option>
             </select>
           </div>
-          <div class="field">
-            <label for="td-day" data-i18n="td.form.day">Preferred day</label>
-            <select id="td-day" name="day" required>
-              <option value="">—</option>
-              <option value="day1">Day 1</option>
-              <option value="day2">Day 2</option>
-              <option value="either">Either</option>
-            </select>
-          </div>
-          <button type="submit" class="btn btn-primary btn-block" data-i18n="td.form.submit">Reserve slot</button>
+          <button type="submit" class="btn btn-primary btn-block" data-i18n="td.form.submit">Request trial</button>
           <p class="form-msg" data-msg></p>
         </form>
       </div>
@@ -379,7 +375,7 @@
             </fieldset>
 
             <div class="field">
-              <label class="check-line"><input type="checkbox" name="testdrive" value="yes"/> <span data-i18n="reg.td">I'd like to join the test drive</span></label>
+              <label class="check-line"><input type="checkbox" name="testdrive" value="yes"/> <span data-i18n="reg.td">I'm interested in a 2-day fleet trial for my company</span></label>
             </div>
 
             <div class="field">

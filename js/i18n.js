@@ -7,14 +7,14 @@ window.I18N = {
 
     "hero.eyebrow": "NEW PARTNERSHIP · 2026",
     "hero.sub": "Introducing 3 new heavy-duty trucks to the Georgian market.",
-    "hero.cta1": "Register for Event", "hero.cta2": "Book Test Drive",
+    "hero.cta1": "Register for Event", "hero.cta2": "Request Fleet Trial",
     "hero.scroll": "Scroll",
 
     "about.eyebrow": "ABOUT THE EVENT",
     "about.title": "A new chapter for Georgia's heavy transport.",
     "about.lead": "Tegeta Commercial Vehicles, part of Tegeta Holding — the largest automotive group in the Caucasus — is proud to announce its new strategic partnership with FAW, one of the world's leading heavy-duty truck manufacturers.",
     "about.body": "Join us for an exclusive launch event where we reveal three new FAW models built for the demands of Georgian construction, logistics, and distribution fleets. Experience the trucks up close, meet the teams behind them, and take the wheel yourself.",
-    "about.s1": "New Models", "about.s2": "Days of Test Drives", "about.s3": "Service Branches", "about.s4": "Years of Expertise",
+    "about.s1": "New Models", "about.s2": "Day Fleet Trial", "about.s3": "Service Branches", "about.s4": "Years of Expertise",
 
     "trucks.eyebrow": "MEET THE FLEET",
     "trucks.title": "Three trucks. Built for every job.",
@@ -45,18 +45,18 @@ window.I18N = {
     "agenda.d1.i4.t": "Lunch & Networking", "agenda.d1.i4.d": "Connect with Tegeta engineers, FAW representatives, and industry peers.",
     "agenda.d1.i5.t": "VIP Reception", "agenda.d1.i5.d": "Evening reception with partners, media, and invited guests.",
 
-    "td.eyebrow": "2-DAY TEST DRIVE", "td.title": "Take the wheel.",
-    "td.lead": "Experience all three FAW models on a professionally-guided 2-day test drive program. Choose your preferred truck, pick a day, and drive one of the most anticipated new fleets in Georgia.",
-    "td.p1": "Professional instructor in every cab", "td.p2": "Route designed to showcase real-world performance", "td.p3": "Limited slots — reserve early",
-    "td.form.title": "Reserve your slot", "td.form.name": "Full name", "td.form.phone": "Phone",
-    "td.form.model": "Preferred model", "td.form.day": "Preferred day", "td.form.submit": "Reserve slot",
+    "td.eyebrow": "2-DAY FLEET TRIAL", "td.title": "Test it where you work.",
+    "td.lead": "A short test drive is available on event day. For a real evaluation, reserve the 2-day fleet trial — Tegeta loans your company the FAW model of your choice for two full working days so you can test it on your own routes, at your own sites, with your own team.",
+    "td.p1": "Your choice of FAW model", "td.p2": "Two full working days in your own operations", "td.p3": "Technical support available on call",
+    "td.form.title": "Reserve your trial", "td.form.name": "Full name", "td.form.company": "Company", "td.form.phone": "Phone",
+    "td.form.model": "Preferred model", "td.form.submit": "Request trial",
 
     "reg.eyebrow": "EVENT REGISTRATION", "reg.title": "Reserve your place at the launch.",
     "reg.lead": "Fill the form below. We'll confirm your registration by email within 24 hours.",
     "reg.name": "Full name *", "reg.company": "Company", "reg.position": "Position", "reg.attendees": "Attendees",
     "reg.email": "Email *", "reg.phone": "Phone *", "reg.interest": "Interested in",
     "reg.int.mixer": "Mixer", "reg.int.dump": "Dump", "reg.int.cargo": "Cargo", "reg.int.all": "All models",
-    "reg.td": "I'd like to join the test drive",
+    "reg.td": "I'm interested in a 2-day fleet trial for my company",
     "reg.notes": "Notes (optional)", "reg.consent": "I consent to being contacted about this event. *",
     "reg.submit": "Complete registration",
 
@@ -68,7 +68,7 @@ window.I18N = {
     "footer.privacy": "Privacy", "footer.terms": "Terms",
 
     "msg.success": "Thank you! Your registration has been received.",
-    "msg.success.td": "Your test drive slot is reserved. We'll confirm by phone.",
+    "msg.success.td": "Your trial request is received. We'll call to schedule.",
     "msg.error": "Please fix the errors above."
   },
 
@@ -79,14 +79,14 @@ window.I18N = {
 
     "hero.eyebrow": "ახალი პარტნიორობა · 2026",
     "hero.sub": "წარმოგიდგენთ 3 ახალ, მძიმე სატვირთო ავტომობილს საქართველოს ბაზარზე.",
-    "hero.cta1": "დარეგისტრირდით ღონისძიებაზე", "hero.cta2": "დაჯავშნეთ ტესტ დრაივი",
+    "hero.cta1": "დარეგისტრირდით ღონისძიებაზე", "hero.cta2": "მოითხოვეთ ტესტ დრაივი",
     "hero.scroll": "გადაახვიეთ",
 
     "about.eyebrow": "ღონისძიების შესახებ",
     "about.title": "ახალი ეტაპი საქართველოს მძიმე ტრანსპორტისთვის.",
     "about.lead": "Tegeta Commercial Vehicles, Tegeta Holding-ის ნაწილი — უმსხვილესი საავტომობილო ჯგუფი კავკასიაში — სიამაყით აცხადებს ახალ სტრატეგიულ პარტნიორობას FAW-თან, მსოფლიოს ერთ-ერთ წამყვან მძიმე სატვირთო ავტომობილების მწარმოებელთან.",
     "about.body": "შემოგვიერთდით ექსკლუზიურ ღონისძიებაზე, სადაც წარმოგიდგენთ სამ ახალ FAW მოდელს, რომელიც აგებულია ქართული სამშენებლო, ლოგისტიკური და სადისტრიბუციო ფლოტების მოთხოვნებისთვის. იხილეთ სატვირთო ავტომობილები ახლოდან, გაიცანით გუნდები, რომლებიც მათ უკან დგანან და თავად დაჯექით საჭესთან.",
-    "about.s1": "ახალი მოდელი", "about.s2": "ტესტ დრაივის დღე", "about.s3": "სერვის ცენტრი", "about.s4": "წლიანი გამოცდილება",
+    "about.s1": "ახალი მოდელი", "about.s2": "დღიანი ტესტ დრაივი", "about.s3": "სერვის ცენტრი", "about.s4": "წლიანი გამოცდილება",
 
     "trucks.eyebrow": "გაიცანით ფლოტი",
     "trucks.title": "სამი სატვირთო ავტომობილი. აგებულია ყველა სამუშაოსთვის.",
@@ -117,18 +117,18 @@ window.I18N = {
     "agenda.d1.i4.t": "სადილი და ნეთვორქინგი", "agenda.d1.i4.d": "დაუკავშირდით Tegeta-ს ინჟინრებს, FAW-ის წარმომადგენლებს და ინდუსტრიის კოლეგებს.",
     "agenda.d1.i5.t": "VIP მიღება", "agenda.d1.i5.d": "საღამოს მიღება პარტნიორებთან, მედიასთან და მოწვეულ სტუმრებთან.",
 
-    "td.eyebrow": "2-დღიანი ტესტ დრაივი", "td.title": "დაჯექით საჭესთან.",
-    "td.lead": "გამოცადეთ სამივე FAW მოდელი პროფესიონალურად მართვადი 2-დღიანი ტესტ დრაივის პროგრამაზე. აირჩიეთ თქვენთვის სასურველი სატვირთო ავტომობილი, აირჩიეთ დღე და მართეთ საქართველოში ერთ-ერთი ყველაზე მოსალოდნელი ახალი ფლოტი.",
-    "td.p1": "პროფესიონალი ინსტრუქტორი ყველა კაბინაში", "td.p2": "მარშრუტი შექმნილია რეალური სამყაროს მუშაობის საჩვენებლად", "td.p3": "შეზღუდული ადგილები — დაჯავშნეთ ადრე",
-    "td.form.title": "დაჯავშნეთ თქვენი ადგილი", "td.form.name": "სრული სახელი", "td.form.phone": "ტელეფონი",
-    "td.form.model": "სასურველი მოდელი", "td.form.day": "სასურველი დღე", "td.form.submit": "ადგილის დაჯავშნა",
+    "td.eyebrow": "2-დღიანი ტესტ დრაივი", "td.title": "გამოცადეთ სამუშაო გარემოში.",
+    "td.lead": "მოკლე ტესტ დრაივი ხელმისაწვდომი იქნება ღონისძიების დღეს. რეალური შეფასებისთვის დაჯავშნეთ 2-დღიანი ტესტ დრაივი — Tegeta გადმოგცემთ FAW-ის თქვენთვის სასურველ მოდელს ორი სრული სამუშაო დღით, რათა გამოცადოთ საკუთარ მარშრუტებზე, საკუთარ ობიექტებზე და საკუთარ გუნდთან ერთად.",
+    "td.p1": "FAW-ის თქვენთვის სასურველი მოდელი", "td.p2": "ორი სრული სამუშაო დღე თქვენს ოპერაციებში", "td.p3": "ტექნიკური მხარდაჭერა ზარზე",
+    "td.form.title": "მოითხოვეთ ტესტ დრაივი", "td.form.name": "სრული სახელი", "td.form.company": "კომპანია", "td.form.phone": "ტელეფონი",
+    "td.form.model": "სასურველი მოდელი", "td.form.submit": "მოთხოვნის გაგზავნა",
 
     "reg.eyebrow": "ღონისძიებაზე რეგისტრაცია", "reg.title": "დაჯავშნეთ თქვენი ადგილი გაშვებაზე.",
     "reg.lead": "შეავსეთ ქვემოთ მოცემული ფორმა. ჩვენ დავადასტურებთ თქვენს რეგისტრაციას ელექტრონული ფოსტით 24 საათის განმავლობაში.",
     "reg.name": "სრული სახელი *", "reg.company": "კომპანია", "reg.position": "პოზიცია", "reg.attendees": "მონაწილეები",
     "reg.email": "ელექტრონული ფოსტა *", "reg.phone": "ტელეფონი *", "reg.interest": "დაინტერესებული არის",
     "reg.int.mixer": "მიქსერი", "reg.int.dump": "ავტომცლელი", "reg.int.cargo": "ტვირთი", "reg.int.all": "ყველა მოდელი",
-    "reg.td": "მე მოხარული ვიქნები მოვუერთდე ტესტ დრაივს",
+    "reg.td": "დაინტერესებული ვარ ჩემი კომპანიისთვის 2-დღიანი ტესტ დრაივით",
     "reg.notes": "შენიშვნები (არჩევნი)", "reg.consent": "მე ვთანხმები, რომ დამიკავშირდნენ ამ ღონისძიების შესახებ. *",
     "reg.submit": "რეგისტრაციის დასრულება",
 

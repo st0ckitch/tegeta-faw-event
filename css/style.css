@@ -208,24 +208,24 @@ p { color: var(--tg-gray-600); }
 .stat-label { font-size: .875rem; font-weight: 600; color: var(--tg-gray-600); }
 
 /* =========================================================
-   VIDEO — full-width, no UI chrome
+   VIDEO — standard section
    ========================================================= */
-.section-video { background: var(--tg-black); padding: 0; }
+.section-video { background: var(--tg-white); padding: 3rem 0; }
+@media (min-width: 768px) { .section-video { padding: 5rem 0; } }
 .video-wrap {
   position: relative; width: 100%;
+  max-width: 1100px; margin: 0 auto;
   aspect-ratio: 16/9;
   overflow: hidden;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
   background: var(--tg-black);
 }
 .video-wrap iframe {
-  position: absolute; top: 50%; left: 50%;
-  /* scale up ~30% so the YouTube title overlay + bottom bar sit outside the viewport */
-  width: 130%; height: 130%;
-  transform: translate(-50%, -50%);
-  border: 0; pointer-events: none;
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  border: 0;
 }
-/* Transparent shield over the whole video so users can't click into YouTube UI */
-.video-shield { position: absolute; inset: 0; z-index: 2; cursor: default; }
 
 /* =========================================================
    SHOWCASE — fanned card stack
