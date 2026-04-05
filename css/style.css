@@ -208,6 +208,95 @@ p { color: var(--tg-gray-600); }
 .stat-label { font-size: .875rem; font-weight: 600; color: var(--tg-gray-600); }
 
 /* =========================================================
+   VIDEO — full-width, no UI chrome
+   ========================================================= */
+.section-video { background: var(--tg-black); padding: 0; }
+.video-wrap {
+  position: relative; width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  background: var(--tg-black);
+}
+.video-wrap iframe {
+  position: absolute; top: 50%; left: 50%;
+  /* scale up ~30% so the YouTube title overlay + bottom bar sit outside the viewport */
+  width: 130%; height: 130%;
+  transform: translate(-50%, -50%);
+  border: 0; pointer-events: none;
+}
+/* Transparent shield over the whole video so users can't click into YouTube UI */
+.video-shield { position: absolute; inset: 0; z-index: 2; cursor: default; }
+
+/* =========================================================
+   SHOWCASE — fanned card stack
+   ========================================================= */
+.section-showcase {
+  background: var(--tg-white);
+  padding: 3rem 0 5rem;
+  overflow: hidden;
+}
+@media (min-width: 768px) { .section-showcase { padding: 4rem 0 7rem; } }
+
+.fan-stack {
+  position: relative;
+  height: 260px;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 768px) { .fan-stack { height: 360px; } }
+@media (min-width: 1024px) { .fan-stack { height: 420px; } }
+
+.fan-card {
+  position: absolute;
+  width: 46%;
+  max-width: 320px;
+  aspect-ratio: 4/3;
+  background: var(--tg-white);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px -12px rgba(0,0,0,.25), 0 0 0 1px rgba(0,0,0,.04);
+  transition: transform .5s var(--ease), box-shadow .5s var(--ease);
+  will-change: transform;
+}
+@media (min-width: 768px) { .fan-card { width: 38%; max-width: 380px; } }
+.fan-card img { width: 100%; height: 100%; object-fit: contain; padding: .75rem; background: var(--tg-gray-50); }
+.fan-card.no-img { background: var(--tg-gray-100); }
+.fan-card.no-img::after {
+  content: "Truck"; position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--tg-gray-400); font-size: .875rem; font-weight: 600;
+}
+
+/* Fan layout — center card on top, others fan out */
+.fan-card.fan-left   { transform: translateX(-60%) rotate(-12deg); z-index: 1; }
+.fan-card.fan-center { transform: translateX(0) rotate(0deg); z-index: 3; box-shadow: 0 30px 60px -15px rgba(0,0,0,.35), 0 0 0 1px rgba(0,0,0,.04); }
+.fan-card.fan-right  { transform: translateX(60%) rotate(12deg); z-index: 2; }
+
+/* Yellow accent border on the center card */
+.fan-card.fan-center::before {
+  content: "";
+  position: absolute; left: 0; right: 0; bottom: 0; height: 4px;
+  background: var(--tg-yellow);
+  z-index: 2;
+}
+
+/* Hover: fan out wider + lift center */
+.fan-stack:hover .fan-card.fan-left   { transform: translateX(-72%) rotate(-16deg); }
+.fan-stack:hover .fan-card.fan-center { transform: translateY(-10px) rotate(0deg); }
+.fan-stack:hover .fan-card.fan-right  { transform: translateX(72%) rotate(16deg); }
+
+/* Mobile: tighter spread so nothing falls off screen */
+@media (max-width: 767.98px) {
+  .fan-card.fan-left  { transform: translateX(-42%) rotate(-10deg); }
+  .fan-card.fan-right { transform: translateX(42%) rotate(10deg); }
+  .fan-stack:hover .fan-card.fan-left  { transform: translateX(-48%) rotate(-12deg); }
+  .fan-stack:hover .fan-card.fan-right { transform: translateX(48%) rotate(12deg); }
+}
+
+/* =========================================================
    TRUCKS
    ========================================================= */
 .section-trucks { background: var(--tg-gray-50); }
@@ -280,6 +369,8 @@ p { color: var(--tg-gray-600); }
 .section-agenda { background: var(--tg-white); }
 .agenda-grid { display: grid; grid-template-columns: 1fr; gap: 2.5rem; }
 @media (min-width: 900px) { .agenda-grid { grid-template-columns: 1fr 1fr; gap: 3rem; } }
+
+.agenda-single { max-width: 680px; margin: 0 auto; }
 
 .agenda-day { background: var(--tg-gray-50); border-radius: var(--radius-lg); padding: 2rem; border-top: 4px solid var(--tg-yellow); }
 .day-header { display: flex; align-items: center; gap: 1.25rem; margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--tg-gray-200); }
