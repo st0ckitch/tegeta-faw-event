@@ -210,7 +210,7 @@ p { color: var(--tg-gray-600); }
 /* =========================================================
    VIDEO — standard section
    ========================================================= */
-.section-video { background: var(--tg-white); padding: 3rem 0; }
+.section-video { background: #ffffff; padding: 3rem 0; }
 @media (min-width: 768px) { .section-video { padding: 5rem 0; } }
 .video-wrap {
   position: relative; width: 100%;
@@ -219,7 +219,7 @@ p { color: var(--tg-gray-600); }
   overflow: hidden;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg);
-  background: var(--tg-black);
+  background: #000;
 }
 .video-wrap iframe {
   position: absolute; inset: 0;
